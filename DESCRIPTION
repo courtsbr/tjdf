@@ -1,0 +1,23 @@
+Package: tjdf
+Type: Package
+Date: 2017-03-14
+Title: Manipulação de decisões do Tribunal de Justiça do Distrito Federal
+Version: 0.1.0
+Author: José de Jesus Filho, Julio Trecenti
+Maintainer: The package maintainer <jjesusfilho@gmail.com>
+Description: Funcões para baixar e organizar dados do Tribunal de Justiça do Distrito Federal
+License: License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends:
+    R (>= 2.10),
+    XML,
+    httr,
+    stringr
+Imports:
+    XML,
+    httr,
+    stringi,
+    stringr,
+    tm
+RoxygenNote: 6.0.1
