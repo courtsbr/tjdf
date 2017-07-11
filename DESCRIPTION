@@ -1,23 +1,27 @@
 Package: tjdf
 Type: Package
 Date: 2017-03-14
-Title: Manipulação de decisões do Tribunal de Justiça do Distrito Federal
+Title: Retrievel and manipulation of Brazilian Federal District decisions.
 Version: 0.1.0
 Author: José de Jesus Filho, Julio Trecenti
 Maintainer: The package maintainer <jjesusfilho@gmail.com>
-Description: Funcões para baixar e organizar dados do Tribunal de Justiça do Distrito Federal
+Description: Functions to retrieve data from Brazilian Federal District Court.
 License: License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Depends:
     R (>= 2.10),
-    XML,
     httr,
-    stringr
+    xml2,
+    stringr,
+    purrr,
+    tibble
 Imports:
-    XML,
     httr,
+    xml2,
+    urltools,
     stringi,
     stringr,
-    tm
+    purrr,
+    tibble
 RoxygenNote: 6.0.1

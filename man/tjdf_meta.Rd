@@ -4,24 +4,20 @@
 \alias{tjdf_meta}
 \title{Function tjdf_meta}
 \usage{
-tjdf_meta(url, form)
+tjdf_meta(BuscaLivre, quoted = TRUE)
 }
 \arguments{
-\item{url}{A forma mais conveniente de obter o url é fazer a busca jurisprudencial
-no TJDF, copiar a url da barra de endereço e transformá-la em uma string do R.}
+\item{BuscaLivre}{a word or an expression to searched for.}
 
-\item{form}{Lista com informações para o body.}
+\item{quoted}{TRUE. It will treat an expression between quotes.}
 }
 \description{
-Esta função extrai os metadados das decisões judiciais do Tribunal de Justiça do Distrito Federal
+This function retrieves the metadata related to the high court decisions according to a search.
 }
 \examples{
-tjdf_meta(url,form)
+tjdf_meta("dano moral coletivo", quoted=TRUE)
 }
-\keyword{Decisão}
-\keyword{Judicial,}
-\keyword{Jurisprudência,}
-\keyword{Justiça,}
-\keyword{Tribunal}
+\keyword{Courts,}
+\keyword{Decisions,}
+\keyword{Jurimetry,}
 \keyword{Webscraping}
-\keyword{de}

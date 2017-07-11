@@ -1,20 +1,17 @@
 #' Function tjdf_meta
 #'
-#' Esta função extrai os metadados das decisões judiciais do Tribunal de Justiça do Distrito Federal
+#' This function retrieves the metadata related to the high court decisions according to a search.
 #'
-#' @param url A forma mais conveniente de obter o url é fazer a busca jurisprudencial
-#'      no TJDF, copiar a url da barra de endereço e transformá-la em uma string do R.
-#' @param form Lista com informações para o body.
-#' @keywords Tribunal de Justiça, Jurisprudência, Decisão Judicial, Webscraping
+#' @param BuscaLivre a word or an expression to searched for.
+#' @param quoted TRUE. It will treat an expression between quotes.
+#' @keywords Courts, Decisions, Jurimetry, Webscraping
 #' @export
 #' @examples
-#' tjdf_meta("Roubo")
+#' tjdf_meta("dano moral coletivo", quoted=TRUE)
 
 tjdf_meta<-function(BuscaLivre,quoted=TRUE){
   
   httr::set_config(httr::config(ssl_verifypeer = FALSE))
-  
-  ## Primeira etapa. Carrega os dados da busca e obtêm no número de decisões.
   
   BuscaLivre<-str_replace_all(BuscaLivre,"\\s+","+")
   

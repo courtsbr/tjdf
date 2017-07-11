@@ -1,9 +1,9 @@
 #' Function inteiro_teor_df
 #'
-#' Esta função baixa os pdfs com o inteiro teor dos acórdãos do Tribunal de Justiça do Distrito Federal
+#' This function downloads the pdfs from Brazilian Distrito Federal second degreee decisions.
 #'
-#' @param registro número de registro obtido com a função tjdf_meta.
-#' @keywords Tribunal de Justiça, Jurisprudência, Decisão Judicial, Inteiro Teor
+#' @param registro String of registro's numbers to search for. You get this number by using the tjdf_meta function.
+#' @keywords Courts, Decisions, Jurimetry, Webscraping
 #' @export
 #' @examples
 #' registro<-1005250
@@ -63,7 +63,7 @@ inteiro_teor_df<-function(registro){
     }, finally = {
       next
     })
-    Sys.sleep(1)
+    Sys.sleep(0.5)
     
   }
   

@@ -7,20 +7,16 @@
 inteiro_teor_df(registro)
 }
 \arguments{
-\item{registro}{número de registro obtido com a função tjdf_meta.}
+\item{registro}{String of registro's numbers to search for. You get this number by using the tjdf_meta function.}
 }
 \description{
-Esta função baixa os pdfs com o inteiro teor dos acórdãos do Tribunal de Justiça do Distrito Federal
+This function downloads the pdfs from Brazilian Distrito Federal second degreee decisions.
 }
 \examples{
 registro<-1005250
 inteiro_teor_df(registro)
 }
-\keyword{Decisão}
-\keyword{Inteiro}
-\keyword{Judicial,}
-\keyword{Jurisprudência,}
-\keyword{Justiça,}
-\keyword{Teor}
-\keyword{Tribunal}
-\keyword{de}
+\keyword{Courts,}
+\keyword{Decisions,}
+\keyword{Jurimetry,}
+\keyword{Webscraping}
