@@ -10,13 +10,7 @@ License: License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Depends:
-    R (>= 2.10),
-    rvest,
-    httr,
-    xml2,
-    stringr,
-    purrr,
-    tibble
+    R (>= 2.10)
 Imports:
     rvest,
     httr,
@@ -25,5 +19,6 @@ Imports:
     stringi,
     stringr,
     purrr,
+    furrr,
     tibble
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.1

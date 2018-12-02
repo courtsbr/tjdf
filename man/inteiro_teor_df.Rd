@@ -4,7 +4,7 @@
 \alias{inteiro_teor_df}
 \title{Function inteiro_teor_df}
 \usage{
-inteiro_teor_df(registro)
+inteiro_teor_df(acordao)
 }
 \arguments{
 \item{registro}{String of registro's numbers to search for. You get this number by using the tjdf_meta function.}

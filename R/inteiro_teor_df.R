@@ -10,7 +10,7 @@
 #' inteiro_teor_df(registro)
 
 
-inteiro<-function(acordao){
+inteiro_teor_df<-function(acordao){
 
 for(i in seq_along(acordao)){
   tryCatch({
