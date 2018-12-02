@@ -20,5 +20,6 @@ Imports:
     stringr,
     purrr,
     furrr,
-    tibble
+    tibble,
+    abjutils
 RoxygenNote: 6.1.1
