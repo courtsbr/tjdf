@@ -1,16 +1,16 @@
-Package: tjdf
+Package: tjdft
 Type: Package
 Date: 2017-03-14
-Title: Retrievel and manipulation of Brazilian Federal District decisions.
-Version: 0.1.0
+Title: Baixar e ler processos e decisões do  TJDFT
+Version: 0.2.0.9000
 Author: José de Jesus Filho, Julio Trecenti
-Maintainer: The package maintainer <jjesusfilho@gmail.com>
-Description: Functions to retrieve data from Brazilian Federal District Court.
-License: License: MIT + file LICENSE
+Maintainer: The package maintainer <jjesus@abj.org.br>
+Description: Funções para baixar e ler processos e decisões do TJDFT.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Depends:
-    R (>= 2.10)
+    R (>= 3.5.0)
 Imports:
     rvest,
     httr,
@@ -18,8 +18,13 @@ Imports:
     urltools,
     stringi,
     stringr,
+    dplyr,
     purrr,
     furrr,
     tibble,
-    abjutils
+    abjutils,
+    future,
+    fs,
+    lubridate,
+    magrittr
 RoxygenNote: 6.1.1
